@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" fill="none">
   <!-- ========================================================
-       LIGHTENED WATERMARK BACKGROUND TRAVEL PATTERN
+       VISIBLE SUBTLE TRAVEL ICON WALLPAPER PATTERN
        ======================================================== -->
 
   <!-- 1. Globe with Orbiting Plane (Top-Left) -->
-  <g transform="translate(30, 30) scale(0.75)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(30, 30) scale(0.75)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <circle cx="45" cy="45" r="38" />
     <path d="M30 18 C32 28, 42 32, 38 45 C35 55, 42 62, 40 75" />
     <path d="M48 10 C52 22, 65 28, 62 42 C60 52, 68 60, 65 72" />
     <path d="M35 48 C45 46, 52 54, 58 50" />
     <path d="M10 60 C-2 70, 8 82, 32 80 C60 78, 88 64, 88 52" />
-    <path d="M78 46 L86 34 L92 36 L88 46 L97 50 L96 54 L86 50 L82 56 L78 55 L80 48 Z" fill="#94a3b8" />
+    <path d="M78 46 L86 34 L92 36 L88 46 L97 50 L96 54 L86 50 L82 56 L78 55 L80 48 Z" fill="#64748b" />
   </g>
 
   <!-- 2. Mountain Peaks with Sun (Top-Center) -->
-  <g transform="translate(195, 25) scale(0.75)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(195, 25) scale(0.75)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <!-- Sun behind peaks -->
     <circle cx="36" cy="30" r="22" fill="none" />
     <!-- Mountain Ridges -->
@@ -29,7 +29,7 @@
   </g>
 
   <!-- 3. Paper Plane with Flight Loop (Top-Right) -->
-  <g transform="translate(365, 30) scale(0.78)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(365, 30) scale(0.78)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <path d="M10 20 L85 46 L38 78 Z" fill="none" />
     <path d="M85 46 L52 90 L38 78 L48 56 Z" fill="none" />
     <path d="M48 56 L10 20" />
@@ -37,7 +37,7 @@
   </g>
 
   <!-- 4. Winding Highway Road with Center Dashes (Middle-Left) -->
-  <g transform="translate(45, 160) scale(0.8)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(45, 160) scale(0.8)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <!-- Road edges -->
     <path d="M42 8 C30 18, 22 28, 38 42 C52 56, 12 78, 8 118" fill="none" />
     <path d="M60 8 C48 18, 40 28, 56 42 C70 56, 32 78, 62 118" fill="none" />
@@ -51,47 +51,47 @@
   </g>
 
   <!-- 5. Travel Luggage / Suitcase (Center) -->
-  <g transform="translate(205, 165) scale(0.78)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(205, 165) scale(0.78)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <rect x="18" y="24" width="60" height="78" rx="12" fill="none" />
     <path d="M34 24 V12 C34 9, 40 6, 48 6 C56 6, 62 9, 62 12 V24" />
     <rect x="40" y="32" width="16" height="6" rx="3" />
     <line x1="28" y1="24" x2="28" y2="102" />
     <line x1="68" y1="24" x2="68" y2="102" />
     <path d="M78 48 C84 48, 86 52, 86 63 C86 74, 84 78, 78 78" />
-    <circle cx="28" cy="108" r="6" fill="#94a3b8" />
-    <circle cx="68" cy="108" r="6" fill="#94a3b8" />
+    <circle cx="28" cy="108" r="6" fill="#64748b" />
+    <circle cx="68" cy="108" r="6" fill="#64748b" />
     <circle cx="38" cy="52" r="12" />
-    <path d="M34 52 L42 46 L42 58 Z" fill="#94a3b8" />
+    <path d="M34 52 L42 46 L42 58 Z" fill="#64748b" />
     <rect x="52" y="58" width="16" height="12" rx="3" />
   </g>
 
   <!-- 6. Modern Cab / Car Silhouette (Middle-Right) -->
-  <g transform="translate(355, 175) scale(0.85)" opacity="0.045">
-    <path d="M12 42 C12 36, 18 30, 26 28 C34 20, 48 14, 65 14 C82 14, 95 20, 102 28 C112 30, 118 36, 118 44 C118 48, 114 52, 110 52 C108 52, 104 42, 94 42 C84 42, 80 52, 78 52 L42 52 C40 52, 36 42, 26 42 C16 42, 12 52, 10 52 Z" fill="#94a3b8" />
+  <g transform="translate(355, 175) scale(0.85)" opacity="0.16">
+    <path d="M12 42 C12 36, 18 30, 26 28 C34 20, 48 14, 65 14 C82 14, 95 20, 102 28 C112 30, 118 36, 118 44 C118 48, 114 52, 110 52 C108 52, 104 42, 94 42 C84 42, 80 52, 78 52 L42 52 C40 52, 36 42, 26 42 C16 42, 12 52, 10 52 Z" fill="#64748b" />
     <path d="M32 26 C36 18, 48 16, 56 16 L56 26 Z" fill="#f8fafc" />
     <path d="M62 16 C70 16, 82 18, 88 26 L62 26 Z" fill="#f8fafc" />
-    <circle cx="26" cy="48" r="10" fill="#94a3b8" stroke="#f8fafc" stroke-width="2" />
-    <circle cx="94" cy="48" r="10" fill="#94a3b8" stroke="#f8fafc" stroke-width="2" />
+    <circle cx="26" cy="48" r="10" fill="#64748b" stroke="#f8fafc" stroke-width="2" />
+    <circle cx="94" cy="48" r="10" fill="#64748b" stroke="#f8fafc" stroke-width="2" />
   </g>
 
   <!-- 7. Dotted Map Route with Location Pins (Bottom-Left) -->
-  <g transform="translate(25, 320) scale(0.85)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(25, 320) scale(0.85)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <path d="M20 70 C10 52, 8 45, 8 36 A 12 12 0 1 1 32 36 C32 45, 30 52, 20 70 Z" fill="none" />
-    <circle cx="20" cy="36" r="4.5" fill="#94a3b8" />
+    <circle cx="20" cy="36" r="4.5" fill="#64748b" />
     <path d="M20 70 C45 78, 60 70, 75 52 C88 36, 75 18, 62 25 C48 32, 58 56, 78 48 C95 40, 108 30, 125 42" stroke-dasharray="5 5" fill="none" />
     <path d="M125 42 C115 24, 113 17, 113 8 A 12 12 0 1 1 137 8 C137 17, 135 24, 125 42 Z" fill="none" />
-    <circle cx="125" cy="8" r="4.5" fill="#94a3b8" />
+    <circle cx="125" cy="8" r="4.5" fill="#64748b" />
   </g>
 
   <!-- 8. Ornamental Swirling Himalayan Cloud (Bottom-Center) -->
-  <g transform="translate(180, 325) scale(0.8)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045" fill="none">
+  <g transform="translate(180, 325) scale(0.8)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" fill="none">
     <path d="M10 40 C15 32, 28 30, 35 36 C32 24, 45 10, 60 12 C72 14, 78 26, 76 34 C85 28, 100 32, 102 42 C112 40, 122 45, 125 54 C120 62, 108 64, 98 60 C90 68, 72 70, 62 64 C52 70, 35 68, 28 58 C18 62, 6 52, 10 40 Z" />
     <path d="M35 36 C38 45, 52 48, 56 40 C58 32, 48 26, 42 32 C38 36, 42 42, 46 40" />
     <path d="M76 34 C80 44, 94 46, 96 38 C98 30, 88 26, 82 32" />
   </g>
 
   <!-- 9. World Globe Grid (Bottom-Right) -->
-  <g transform="translate(365, 320) scale(0.75)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045">
+  <g transform="translate(365, 320) scale(0.75)" stroke="#64748b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16">
     <circle cx="50" cy="50" r="44" />
     <line x1="6" y1="50" x2="94" y2="50" />
     <line x1="50" y1="6" x2="50" y2="94" />
@@ -101,7 +101,7 @@
   </g>
 
   <!-- 10. Radiant Spiral Tribal Sunburst (Center Top-Right Fill) -->
-  <g transform="translate(315, 80) scale(0.65)" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.045" fill="none">
+  <g transform="translate(315, 80) scale(0.65)" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" fill="none">
     <path d="M30 30 C32 26, 38 26, 40 30 C42 36, 32 40, 26 36 C18 30, 24 18, 34 16 C48 14, 54 28, 48 42 C40 56, 18 52, 12 36" />
     <path d="M30 6 C32 10, 36 12, 34 16" />
     <path d="M52 14 C48 18, 46 22, 44 26" />
