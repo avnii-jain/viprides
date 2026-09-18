@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — VIP Rides | Chandigarh Hub &amp; Interactive Location Map</title>
+  <meta name="description" content="Contact VIP Rides Chandigarh. Phone: +91-9023390211. Address: 30B, Ananta Homes, Gazipur Road, Zirakpur - 140603. Interactive map, instant cab quote, and 24/7 outstation dispatch.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/all.css">
+  
+  <!-- Leaflet Map CSS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17693743068"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17693743068');
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header solid-header" id="siteHeader">
+    <div class="site-container nav-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="VIP Rides Home">
+        <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
+        <span class="brand-badge d-none d-sm-inline-block">Chandigarh Hub</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-item">Home</a></li>
+          <li><a href="index.html#destinations" class="nav-link-item">Destinations</a></li>
+          <li><a href="index.html#packages" class="nav-link-item">Tour Packages</a></li>
+          <li><a href="carrental.html" class="nav-link-item">Car Rental</a></li>
+          <li><a href="about.html" class="nav-link-item">About Us</a></li>
+          <li><a href="contact.html" class="nav-link-item active">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+919023390211" class="nav-phone-link d-none d-md-flex">
+          <i class="fas fa-phone-alt"></i>
+          <span>+91 90233 90211</span>
+        </a>
+        <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm">
+          <i class="fas fa-phone-alt"></i> Call Now
+        </a>
+        <button class="nav-mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="inner-page-hero">
+    <div class="site-container">
+      <div class="inner-hero-content">
+        <span class="section-badge"><i class="fas fa-headset"></i> 24/7 Travel Assistance</span>
+        <h1 class="inner-hero-title">Get In Touch With VIP Rides</h1>
+        <p class="inner-hero-desc">
+          Have a question about an outstation route, vehicle availability, or tour itinerary? We are here 24 hours a day to assist you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split Screen: Contact Info & Interactive Map -->
+  <section class="section-padding" style="background: #ffffff;">
+    <div class="site-container">
+      
+      <div class="contact-split-grid">
+        
+        <!-- LEFT: Contact Information -->
+        <div class="contact-info-panel">
+          <span class="section-badge"><i class="fas fa-id-card"></i> Direct Contact</span>
+          <h2 class="contact-card-title">Our Office &amp; Dispatch Hub</h2>
+          
+          <div class="contact-details-grid">
+            
+            <div class="contact-detail-box">
+              <div class="contact-detail-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h6>Business Address</h6>
+                <p>30B, Ananta Homes, Gazipur Road, Zirakpur, Chandigarh Tri-City - 140603</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-box">
+              <div class="contact-detail-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h6>Call / WhatsApp Support</h6>
+                <p>
+                  <a href="tel:+919023390211">+91 90233 90211</a> &bull; 
+                  <a href="tel:+919872798927">+91 98727 98927</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail-box">
+              <div class="contact-detail-icon">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h6>Email Enquiries</h6>
+                <p><a href="mailto:info@viprides.com">info@viprides.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-box">
+              <div class="contact-detail-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h6>Operating Hours</h6>
+                <p>24 Hours / 7 Days a Week (Outstation Dispatch Active)</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides,%20I%20want%20to%20inquire%20about%20a%20ride" target="_blank" class="btn-vip btn-vip-primary" style="flex: 1;">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="tel:+919023390211" class="btn-vip btn-vip-dark" style="flex: 1;">
+              <i class="fas fa-phone-alt"></i> Direct Call
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Interactive Map -->
+        <div class="contact-map-card">
+          <div class="map-card-header">
+            <h4><i class="fas fa-map-marked-alt"></i> Interactive Location Map</h4>
+            <a href="https://maps.google.com/?q=30B,+Ananta+Homes,+Gazipur+Road,+Zirakpur" target="_blank" class="btn-vip btn-vip-outline btn-vip-sm">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+          <div id="vipContactMap" style="height: 440px; width: 100%;"></div>
+          <div style="padding: 0.85rem 1.25rem; background: var(--bg-alt); font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+            <span><i class="fas fa-info-circle"></i> Click map to activate zoom scroll</span>
+            <span style="font-weight: 700; color: var(--primary);">Zirakpur / Chandigarh Hub</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BELOW: "Send Us a Message" -->
+  <section class="contact-form-section">
+    <div class="site-container">
+      
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-paper-plane"></i> Message Us</span>
+        <h2 class="section-title">Send Us a Message</h2>
+        <p class="section-desc">
+          Fill in your travel preferences and our dispatch coordinator will respond with detailed itinerary options and best prices.
+        </p>
+      </div>
+
+      <div class="contact-form-card">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="6919cd56-c089-44ea-82bf-71064991e7d6">
+          <input type="hidden" name="subject" value="Contact Us Inquiry - VIP Rides">
+
+          <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1.25rem;">
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" class="form-control-custom" name="Name" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-phone-alt"></i> Mobile Number</label>
+              <input type="tel" class="form-control-custom" name="Mobile" placeholder="e.g. 9023390211" required>
+            </div>
+          </div>
+
+          <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1.25rem;">
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="far fa-envelope"></i> Email Address</label>
+              <input type="email" class="form-control-custom" name="Email" placeholder="Enter Email Address" required>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-calendar-alt"></i> Travel Date</label>
+              <input type="date" class="form-control-custom" name="Travel_Date" required>
+            </div>
+          </div>
+
+          <div class="form-group-custom" style="margin-bottom: 1.25rem;">
+            <label class="form-label-custom"><i class="fas fa-map-marker-alt"></i> Destination / Trip Type</label>
+            <input type="text" class="form-control-custom" name="Destination" placeholder="e.g. Chandigarh to Katra / Dalhousie Tour / Local Taxi Hire" required>
+          </div>
+
+          <div class="form-group-custom" style="margin-bottom: 1.75rem;">
+            <label class="form-label-custom"><i class="fas fa-comment-dots"></i> Message / Query</label>
+            <textarea class="form-control-custom" name="Message" rows="4" placeholder="Tell us about the number of passengers, preferred vehicle, pickup location or specific tour dates..." required></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn-vip btn-vip-primary" style="padding: 0.95rem 2.5rem; font-size: 1.05rem;">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
+          </a>
+          <p>
+            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and cost-effective.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About Us</a></li>
+            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a></li>
+            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel Booking</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Popular Routes</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Katra</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Srinagar</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Dalhousie</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Manali</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Shimla</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Headquarters</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>30B, Ananta Homes, Gazipur Road, Zirakpur - 140603</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+91-9023390211 / +91-9872798927</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@viprides.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 VIP Rides. All Rights Reserved.</div>
+        <div>Start Your Journey From Chandigarh</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides" class="floating-action-btn floating-whatsapp" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919023390211" class="floating-action-btn floating-call" aria-label="Call Now">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- Leaflet Map JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

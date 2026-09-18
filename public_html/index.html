@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Rides — Your Journey Starts in Chandigarh | Outstation Cabs & Tour Packages</title>
+  <meta name="description"
+    content="Every Journey Begins From Chandigarh. Book premium outstation cabs, car rentals, and curated tour packages to Katra, Dalhousie, Srinagar, Manali, Shimla, and Dharamshala with VIP Rides.">
+
+  <!-- Favicon & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="assets/css/all.css">
+
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17693743068"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-17693743068');
+  </script>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (High Contrast & Branding Visibility)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-container nav-container">
+      <a href="index.html" class="brand-logo-wrap" aria-label="VIP Rides Home">
+        <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
+        <span class="brand-badge d-none d-sm-inline-block">Chandigarh Hub</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu-list">
+          <li><a href="index.html" class="nav-link-item active">Home</a></li>
+          <li><a href="#journey-path" class="nav-link-item">Journey Path</a></li>
+          <li><a href="#destinations" class="nav-link-item">Destinations</a></li>
+          <li><a href="#fleet" class="nav-link-item">Car Rental</a></li>
+          <li><a href="#packages" class="nav-link-item">Tour Packages</a></li>
+          <li><a href="about.html" class="nav-link-item">About Us</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-vip btn-vip-primary btn-vip-sm" onclick="openQuoteModal({ pickup: 'Chandigarh' })">
+          <i class="fas fa-car"></i> Book Now
+        </button>
+        <button class="nav-mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO — CINEMATIC VERTICAL DESTINATION REVEAL
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+
+    <!-- Vertical Destination Strips Background (Reveals sequentially) -->
+    <div class="hero-dest-panels-grid">
+      <!-- 1. Chandigarh (Open Hand Monument) -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/chandigarh-hero.jpg" alt="Chandigarh Open Hand Monument Hub" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">CHANDIGARH</span>
+      </div>
+      <!-- 2. Katra (Vaishno Devi Bhawan Daytime Hills) -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/katra-hero.jpg" alt="Katra Vaishno Devi Shrine & Green Hills" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">KATRA</span>
+      </div>
+      <!-- 3. Dalhousie (Valley Church & Snowy Peaks) -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/dalhousie-hero.png" alt="Dalhousie Valley Church & Snow Peaks" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">DALHOUSIE</span>
+      </div>
+      <!-- 4. Srinagar (Dal Lake Shikaras & Blue Skies) -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/srinagar-hero.png" alt="Srinagar Dal Lake Shikaras & Mountains" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">SRINAGAR</span>
+      </div>
+      <!-- 5. Manali (Snow Peaks & River Valley) -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/manali-hero.png" alt="Manali Snow Mountains & River Valley" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">MANALI</span>
+      </div>
+      <!-- 6. Shimla -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/shimla-hero.jpg" alt="Shimla Christ Church Ridge" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">SHIMLA</span>
+      </div>
+      <!-- 7. Dharamshala -->
+      <div class="hero-vertical-panel">
+        <img src="assets/img/hero/dharamshala-hero.jpg" alt="Dharamshala McLeod Ganj Prayer Flags" loading="eager">
+        <div class="hero-panel-overlay"></div>
+        <span class="hero-panel-name">DHARAMSHALA</span>
+      </div>
+    </div>
+
+    <!-- Main Hero Content -->
+    <div class="site-container" style="position: relative; z-index: 6; width: 100%;">
+      <div class="hero-main-content-wrap" id="heroMainContent">
+        <div class="chandigarh-origin-tag">
+          <span class="chandigarh-pulse-dot"></span>
+          <span class="chandigarh-tag-text">Every Journey Begins From Chandigarh</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Your Journey Starts in <span class="text-highlight">Chandigarh</span>
+        </h1>
+
+        <p class="hero-subtext">
+          From Chandigarh to the mountains, valleys and destinations of North India. Comfortable rides, verified
+          drivers, and unforgettable journeys.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ pickup: 'Chandigarh' })">
+            <i class="fas fa-route"></i> Plan Your Journey
+          </button>
+          <a href="#journey-path" class="btn-vip btn-vip-secondary">
+            <i class="fas fa-compass"></i> Explore Destinations
+          </a>
+        </div>
+
+        <!-- Step 2: Car Appears Below Buttons -->
+        <div class="hero-car-stage" id="heroCarStage">
+          <div class="hero-travel-car" id="heroTravelCar">
+            <img src="assets/img/cars/hero-travel-van.png" alt="VIP Rides Luxury Cab" class="hero-travel-van-img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. SECTION — "THE CHANDIGARH JOURNEY PATH" (Interactive Route Timeline)
+       ========================================================================== -->
+  <section class="section-padding journey-path-section" id="journey-path">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-route"></i> Interactive Route Timeline</span>
+        <h2 class="section-title">The Chandigarh Journey Path</h2>
+        <p class="section-desc">
+          Every journey begins from Chandigarh. Follow our interactive route timeline to discover distances, travel
+          times, and scenic highlights across North India.
+        </p>
+      </div>
+
+      <!-- 2. Alternating Highway Route Timeline -->
+      <div class="route-timeline-wrap" id="routeTimelineWrap">
+
+        <!-- Highway Center Spine Track -->
+        <div class="route-timeline-spine">
+          <div class="route-timeline-spine-fill" id="timelineSpineFill"></div>
+        </div>
+
+        <!-- Moving Car Marker on Highway Spine -->
+        <div class="timeline-car-tracker" id="timelineCarTracker" title="Driving along Chandigarh Route">
+          <i class="fas fa-car-side"></i>
+        </div>
+
+        <!-- Milestone 1: Shimla (112 km) — Left -->
+        <div class="route-timeline-item item-left active-milestone" data-dest-key="shimla" data-milestone-index="0">
+          <div class="timeline-card-box" onclick="openDestinationModal('shimla')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/shimla-hero.jpg" alt="Chandigarh to Shimla" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-mountain"></i> Himachal</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Shimla</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~3.5 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Scenic drive across the Himalayan Expressway to Mall Road, Christ Church on The Ridge, and snow
+                viewpoints in Kufri.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('shimla');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Shimla' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">112 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 2: Amritsar (225 km) — Right -->
+        <div class="route-timeline-item item-right" data-dest-key="amritsar" data-milestone-index="1">
+          <div class="timeline-card-box" onclick="openDestinationModal('amritsar')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/slider/2.jpg" alt="Chandigarh to Amritsar" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-praying-hands"></i> Pilgrimage</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Amritsar</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~4 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Swift 4-lane expressway journey to Sri Harmandir Sahib (Golden Temple), Jallianwala Bagh, and the
+                patriotic Wagah Border.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('amritsar');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Amritsar' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">225 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 3: Dharamshala (240 km) — Left -->
+        <div class="route-timeline-item item-left" data-dest-key="dharamshala" data-milestone-index="2">
+          <div class="timeline-card-box" onclick="openDestinationModal('dharamshala')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/dharamshala-hero.jpg" alt="Chandigarh to Dharamshala" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-om"></i> Kangra Valley</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Dharamshala</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~5.5 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Spiritual haven in Kangra Valley with the Dalai Lama Temple, HPCA Stadium, Bhagsu waterfalls, and McLeod
+                Ganj.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('dharamshala');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Dharamshala' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">240 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 4: Manali (290 km) — Right -->
+        <div class="route-timeline-item item-right" data-dest-key="manali" data-milestone-index="3">
+          <div class="timeline-card-box" onclick="openDestinationModal('manali')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/manali-hero.png" alt="Chandigarh to Manali" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-snowflake"></i> Valley of Gods</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Manali</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~7.5 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Fast expressway route via Kiratpur to Solang Valley snow sports, Atal Tunnel, Beas riverbanks, and Old
+                Manali.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('manali');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Manali' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">290 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 5: Dalhousie (315 km) — Left -->
+        <div class="route-timeline-item item-left" data-dest-key="dalhousie" data-milestone-index="4">
+          <div class="timeline-card-box" onclick="openDestinationModal('dalhousie')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/dalhousie-hero.png" alt="Chandigarh to Dalhousie" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-tree"></i> Pine Hills</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Dalhousie</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~6.5 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Tranquil colonial charm, pine-clad mountain ridges, Dainkund Peak, and the mini-Switzerland of India —
+                Khajjiar.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('dalhousie');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Dalhousie' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">315 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 6: Katra (390 km) — Right -->
+        <div class="route-timeline-item item-right" data-dest-key="katra" data-milestone-index="5">
+          <div class="timeline-card-box" onclick="openDestinationModal('katra')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/katra-hero.jpg" alt="Chandigarh to Katra" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-praying-hands"></i> Pilgrimage</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Katra</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~7.5 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Revered pilgrimage to Holy Shrine of Shri Mata Vaishno Devi Ji with seasoned highway drivers and
+                flexible waiting.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('katra');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Katra' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">390 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+        <!-- Milestone 7: Srinagar (560 km) — Left -->
+        <div class="route-timeline-item item-left" data-dest-key="srinagar" data-milestone-index="6">
+          <div class="timeline-card-box" onclick="openDestinationModal('srinagar')">
+            <div class="timeline-card-img-wrap">
+              <img src="assets/img/hero/srinagar-hero.png" alt="Chandigarh to Srinagar" loading="lazy">
+              <span class="timeline-card-tag"><i class="fas fa-mountain"></i> Kashmir Valley</span>
+            </div>
+            <div class="timeline-card-body">
+              <div class="timeline-card-header-row">
+                <h4 class="timeline-card-title">Chandigarh &rarr; Srinagar</h4>
+                <span class="timeline-card-duration"><i class="fas fa-clock"></i> ~12 hrs</span>
+              </div>
+              <p class="timeline-card-desc">
+                Breathtaking Kashmir Valley — Dal Lake shikara rides, Mughal Gardens, Gulmarg gondolas, and Banihal
+                mountain expressways.
+              </p>
+              <div class="timeline-card-actions">
+                <button class="btn-vip btn-vip-primary btn-vip-sm"
+                  onclick="event.stopPropagation(); openDestinationModal('srinagar');">
+                  Explore Route &rarr;
+                </button>
+                <button class="btn-vip btn-vip-dark btn-vip-sm"
+                  onclick="event.stopPropagation(); openQuoteModal({ pickup: 'Chandigarh', destination: 'Srinagar' });">
+                  Book Cab
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-milestone-marker">
+            <span class="milestone-dist-pill">560 KM</span>
+            <div class="milestone-node-dot"></div>
+          </div>
+          <div class="timeline-card-spacer"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. SECTION — "WHERE WILL YOUR JOURNEY TAKE YOU?" (EDITORIAL BENTO GRID)
+       ========================================================================== -->
+  <section class="section-padding destinations-section" id="destinations">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-globe-asia"></i> North India Destinations</span>
+        <h2 class="section-title">Where Will Your Journey Take You?</h2>
+        <p class="section-desc">
+          Discover destinations you can reach with VIP Rides. Start from Chandigarh and explore iconic hill stations,
+          snow valleys, and pilgrimage shrines.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="dest-filter-bar">
+        <button class="filter-pill active" data-filter="all">All Destinations</button>
+        <button class="filter-pill" data-filter="himachal">Himachal Pradesh</button>
+        <button class="filter-pill" data-filter="kashmir">Kashmir</button>
+        <button class="filter-pill" data-filter="pilgrimage">Pilgrimage Shrines</button>
+        <button class="filter-pill" data-filter="outstation">Outstation Routes</button>
+      </div>
+
+      <!-- Asymmetric Bento Destination Cards Grid -->
+      <div class="bento-dest-grid">
+
+        <!-- Srinagar (Large Bento Card - Col 7) -->
+        <div class="bento-card bento-col-7" data-category="kashmir">
+          <img class="bento-card-bg-img" src="assets/img/hero/srinagar-hero.png" alt="Chandigarh to Srinagar Kashmir"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-mountain"></i> Kashmir Valley</span>
+            <h3 class="bento-dest-title">Chandigarh to Srinagar</h3>
+            <p class="bento-dest-desc">
+              Experience the magic of Kashmir — Dal Lake shikara rides, Gulmarg snow gondolas, and Mughal Gardens.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 560 km (~12 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="srinagar">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Katra (Bento Card - Col 5) -->
+        <div class="bento-card bento-col-5" data-category="pilgrimage">
+          <img class="bento-card-bg-img" src="assets/img/hero/katra-hero.jpg" alt="Chandigarh to Katra Vaishno Devi"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-praying-hands"></i> Pilgrimage</span>
+            <h3 class="bento-dest-title">Chandigarh to Katra</h3>
+            <p class="bento-dest-desc">
+              Maa Vaishno Devi Darshan trips with dedicated waiting and seasoned highway chauffeurs.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 390 km (~7.5 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="katra">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dalhousie (Bento Card - Col 4) -->
+        <div class="bento-card bento-col-4" data-category="himachal">
+          <img class="bento-card-bg-img" src="assets/img/hero/dalhousie-hero.png" alt="Chandigarh to Dalhousie"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-tree"></i> Himachal Hills</span>
+            <h3 class="bento-dest-title">Dalhousie &amp; Khajjiar</h3>
+            <p class="bento-dest-desc">
+              Pine forests, colonial charm, and the mini-Switzerland of India.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 315 km (~6.5 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="dalhousie">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manali (Bento Card - Col 8) -->
+        <div class="bento-card bento-col-8" data-category="himachal">
+          <img class="bento-card-bg-img" src="assets/img/hero/manali-hero.png" alt="Chandigarh to Manali"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-snowflake"></i> Valley of Gods</span>
+            <h3 class="bento-dest-title">Chandigarh to Manali</h3>
+            <p class="bento-dest-desc">
+              Fast expressway travel to Solang snow adventures, Atal Tunnel, and scenic Kullu River valleys.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 290 km (~7.5 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="manali">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shimla (Bento Card - Col 4) -->
+        <div class="bento-card bento-col-4" data-category="himachal">
+          <img class="bento-card-bg-img" src="assets/img/hero/shimla-hero.jpg" alt="Chandigarh to Shimla"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-mountain"></i> Queen of Hills</span>
+            <h3 class="bento-dest-title">Shimla &amp; Kufri</h3>
+            <p class="bento-dest-desc">
+              Scenic Himalayan Expressway drive to Mall Road, Ridge, and Kufri viewpoints.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 112 km (~3.5 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="shimla">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dharamshala (Bento Card - Col 4) -->
+        <div class="bento-card bento-col-4" data-category="himachal">
+          <img class="bento-card-bg-img" src="assets/img/hero/dharamshala-hero.jpg" alt="Chandigarh to Dharamshala"
+            loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-om"></i> Kangra Valley</span>
+            <h3 class="bento-dest-title">Dharamshala &amp; McLeod</h3>
+            <p class="bento-dest-desc">
+              Dalai Lama temple, HPCA stadium, and scenic Dhauladhar mountain backdrops.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 240 km (~5.5 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="dharamshala">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Amritsar (Bento Card - Col 4) -->
+        <div class="bento-card bento-col-4" data-category="pilgrimage">
+          <img class="bento-card-bg-img" src="assets/img/slider/2.jpg" alt="Chandigarh to Amritsar" loading="lazy">
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-dest-tag"><i class="fas fa-place-of-worship"></i> Pilgrimage</span>
+            <h3 class="bento-dest-title">Amritsar Golden Temple</h3>
+            <p class="bento-dest-desc">
+              Sri Harmandir Sahib, Jallianwala Bagh, and the patriotic Wagah Border ceremony.
+            </p>
+            <div class="bento-dest-footer">
+              <span class="bento-dest-distance"><i class="fas fa-road"></i> 225 km (~4 hrs)</span>
+              <button class="btn-vip btn-vip-primary btn-vip-sm" data-open-modal="amritsar">
+                Explore &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CAR RENTAL SECTION — "RENT A CAR. TRAVEL YOUR WAY."
+       ========================================================================== -->
+  <section class="section-padding fleet-section" id="fleet">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-car"></i> Fleet &amp; Rentals</span>
+        <h2 class="section-title">Rent a Car. Travel Your Way.</h2>
+        <p class="section-desc">
+          Choose from our meticulously maintained fleet of modern hatchbacks, executive sedans, spacious SUVs, and group
+          luxury tempo travellers.
+        </p>
+      </div>
+
+      <!-- Fleet Category Filters -->
+      <div class="dest-filter-bar fleet-filter-bar">
+        <button class="filter-pill active" data-filter="all">All Vehicles</button>
+        <button class="filter-pill" data-filter="sedan">Sedan</button>
+        <button class="filter-pill" data-filter="suv">SUV &amp; Premium</button>
+        <button class="filter-pill" data-filter="tempo">Tempo Traveller</button>
+        <button class="filter-pill" data-filter="luxury">Luxury &amp; Coaches</button>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="fleet-grid">
+
+        <!-- Dzire -->
+        <div class="fleet-card" data-category="sedan">
+          <span class="fleet-category-badge">Executive Sedan</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/1.png" alt="Maruti Dzire Taxi Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Maruti Suzuki Dzire</h3>
+          <p class="fleet-car-subtitle">Fuel-efficient, comfortable for city and outstation journeys</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-user-friends"></i>
+              <span>4 + 1 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-suitcase"></i>
+              <span>2 Bags</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-snowflake"></i>
+              <span>AC / Climate</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Maruti Suzuki Dzire', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Swift / Etios Liva -->
+        <div class="fleet-card" data-category="sedan">
+          <span class="fleet-category-badge">Economy Hatchback</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/2.png" alt="Swift / Etios Liva Taxi Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Swift / Etios Liva</h3>
+          <p class="fleet-car-subtitle">Agile and budget-friendly for couples and small family trips</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-user-friends"></i>
+              <span>4 + 1 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-suitcase"></i>
+              <span>2 Bags</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-snowflake"></i>
+              <span>Full AC</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Swift / Etios Liva', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Honda Amaze -->
+        <div class="fleet-card" data-category="sedan">
+          <span class="fleet-category-badge">Premium Sedan</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/4.png" alt="Honda Amaze Taxi Hire" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Honda Amaze</h3>
+          <p class="fleet-car-subtitle">Spacious boot space, plush seating, and smooth expressway glide</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-user-friends"></i>
+              <span>4 + 1 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-suitcase"></i>
+              <span>3 Bags</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-snowflake"></i>
+              <span>Dual AC</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Honda Amaze', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Toyota Innova Crysta -->
+        <div class="fleet-card" data-category="suv">
+          <span class="fleet-category-badge">Premium SUV</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/10.png" alt="Innova Crysta Taxi Hire Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Toyota Innova Crysta</h3>
+          <p class="fleet-car-subtitle">The gold standard for long-distance family and mountain hill trips</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-user-friends"></i>
+              <span>6/7 + 1 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-suitcase"></i>
+              <span>4 Bags</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-snowflake"></i>
+              <span>Rear AC Vents</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Toyota Innova Crysta', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Toyota Fortuner -->
+        <div class="fleet-card" data-category="suv">
+          <span class="fleet-category-badge">Luxury 4x4 SUV</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/11.png" alt="Toyota Fortuner Luxury Rental Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Toyota Fortuner</h3>
+          <p class="fleet-car-subtitle">Commanding presence, high ground clearance, VIP executive travel</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-user-friends"></i>
+              <span>6 + 1 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-suitcase"></i>
+              <span>4 Bags</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>4WD Capable</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Toyota Fortuner', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Tempo Traveller -->
+        <div class="fleet-card" data-category="tempo">
+          <span class="fleet-category-badge">Group Traveller</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/7.jpg" alt="Tempo Traveller Hire Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Force Tempo Traveller</h3>
+          <p class="fleet-car-subtitle">Spacious pushback seats, individual AC vents, and high luggage capacity</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-users"></i>
+              <span>12 - 17 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-luggage-cart"></i>
+              <span>Ample Luggage</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-tv"></i>
+              <span>Audio/Video</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Force Tempo Traveller', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Mini Bus -->
+        <div class="fleet-card" data-category="luxury">
+          <span class="fleet-category-badge">Corporate / Group</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/8.jpg" alt="Mini Bus Rental Chandigarh" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Executive Mini Bus</h3>
+          <p class="fleet-car-subtitle">Ideal for wedding guest transit, corporate outings, and large tours</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-users"></i>
+              <span>20 - 30 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-bus"></i>
+              <span>Air Suspension</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-snowflake"></i>
+              <span>Central AC</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Executive Mini Bus', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+        <!-- Deluxe Bus 2x2 -->
+        <div class="fleet-card" data-category="luxury">
+          <span class="fleet-category-badge">Large Coach</span>
+          <div class="fleet-img-wrap">
+            <img src="assets/img/cars/9.jpg" alt="Deluxe Bus Rental 2x2" loading="lazy">
+          </div>
+          <h3 class="fleet-car-title">Deluxe Luxury Bus 2X2</h3>
+          <p class="fleet-car-subtitle">Premium reclining pushback seats for large pilgrimage and group delegations</p>
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <i class="fas fa-users"></i>
+              <span>35 - 45 Seats</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-couch"></i>
+              <span>2x2 Pushback</span>
+            </div>
+            <div class="spec-item">
+              <i class="fas fa-music"></i>
+              <span>Entertainment</span>
+            </div>
+          </div>
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Deluxe Luxury Bus 2X2', pickup: 'Chandigarh' })">
+            Rent This Vehicle
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. TOUR PACKAGES SECTION — "JOURNEYS DESIGNED AROUND YOU"
+       ========================================================================== -->
+  <section class="section-padding packages-section" id="packages">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-suitcase-rolling"></i> Curated Travel</span>
+        <h2 class="section-title">Journeys Designed Around You</h2>
+        <p class="section-desc">
+          Handcrafted tour packages starting directly from Chandigarh with comprehensive taxi, fuel, toll, and route
+          management included.
+        </p>
+      </div>
+
+      <!-- Package Filters -->
+      <div class="dest-filter-bar package-filter-bar">
+        <button class="filter-pill active" data-filter="all">All Packages</button>
+        <button class="filter-pill" data-filter="himachal">Himachal Packages</button>
+        <button class="filter-pill" data-filter="kashmir">Kashmir Tours</button>
+        <button class="filter-pill" data-filter="pilgrimage">Pilgrimage Packages</button>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="packages-grid">
+
+        <!-- Package 1: Katra & Vaishno Devi -->
+        <div class="package-card" data-category="pilgrimage">
+          <div class="package-card-header">
+            <img src="assets/img/section/katra.jpg" alt="Chandigarh to Katra Tour Package" loading="lazy">
+            <span class="package-duration-tag"><i class="fas fa-calendar-day"></i> 3 Days / 2 Nights</span>
+          </div>
+          <div class="package-card-body">
+            <span class="package-origin-route"><i class="fas fa-map-marker-alt"></i> Ex-Chandigarh &rarr; Katra</span>
+            <h3 class="package-title">Maa Vaishno Devi Yatra Tour</h3>
+            <p class="package-desc">
+              Complete round trip from Chandigarh to Katra base camp with dedicated driver, highway tolls, and Darshan
+              waiting.
+            </p>
+            <ul class="package-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Direct pickup from Chandigarh home / airport</li>
+              <li><i class="fas fa-check-circle"></i> Flexible Darshan schedule & waiting</li>
+              <li><i class="fas fa-check-circle"></i> Jammu / Pathankot en-route stopovers</li>
+            </ul>
+            <button class="btn-vip btn-vip-dark"
+              onclick="openQuoteModal({ destination: 'Katra Vaishno Devi Tour', tripType: 'Tour Package' })">
+              Book This Package &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Package 2: Shimla & Manali Himachal Highlights -->
+        <div class="package-card" data-category="himachal">
+          <div class="package-card-header">
+            <img src="assets/img/slider/1.jpg" alt="Shimla Manali Tour Package from Chandigarh" loading="lazy">
+            <span class="package-duration-tag"><i class="fas fa-calendar-day"></i> 5 Days / 4 Nights</span>
+          </div>
+          <div class="package-card-body">
+            <span class="package-origin-route"><i class="fas fa-map-marker-alt"></i> Ex-Chandigarh &rarr; Shimla &rarr;
+              Manali</span>
+            <h3 class="package-title">Himachal Crown Circuit</h3>
+            <p class="package-desc">
+              Experience the best of Himachal — Mall Road in Shimla, Kufri snow viewpoint, Solang Valley adventure, and
+              Atal Tunnel.
+            </p>
+            <ul class="package-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Kufri, Mall Road & Jakhu Temple coverage</li>
+              <li><i class="fas fa-check-circle"></i> Solang Valley snow sports & Atal Tunnel</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated hill-experienced chauffeur</li>
+            </ul>
+            <button class="btn-vip btn-vip-dark"
+              onclick="openQuoteModal({ destination: 'Shimla Manali Circuit', tripType: 'Tour Package' })">
+              Book This Package &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Package 3: Dalhousie & Dharamshala -->
+        <div class="package-card" data-category="himachal">
+          <div class="package-card-header">
+            <img src="assets/img/section/dalho.jpg" alt="Dalhousie Dharamshala Package" loading="lazy">
+            <span class="package-duration-tag"><i class="fas fa-calendar-day"></i> 4 Days / 3 Nights</span>
+          </div>
+          <div class="package-card-body">
+            <span class="package-origin-route"><i class="fas fa-map-marker-alt"></i> Ex-Chandigarh &rarr; Dalhousie &
+              Dharamshala</span>
+            <h3 class="package-title">Dhauladhar Serenity Tour</h3>
+            <p class="package-desc">
+              Unwind in the mini-Switzerland of India (Khajjiar), McLeod Ganj monasteries, and the HPCA stadium in
+              Dharamshala.
+            </p>
+            <ul class="package-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Khajjiar green meadows & Dainkund trek</li>
+              <li><i class="fas fa-check-circle"></i> McLeod Ganj & Dalai Lama Temple</li>
+              <li><i class="fas fa-check-circle"></i> Kangra Valley scenic mountain drives</li>
+            </ul>
+            <button class="btn-vip btn-vip-dark"
+              onclick="openQuoteModal({ destination: 'Dalhousie Dharamshala Tour', tripType: 'Tour Package' })">
+              Book This Package &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Package 4: Kashmir Heaven on Earth -->
+        <div class="package-card" data-category="kashmir">
+          <div class="package-card-header">
+            <img src="assets/img/section/kashmir.jpg" alt="Kashmir Tour Package from Chandigarh" loading="lazy">
+            <span class="package-duration-tag"><i class="fas fa-calendar-day"></i> 6 Days / 5 Nights</span>
+          </div>
+          <div class="package-card-body">
+            <span class="package-origin-route"><i class="fas fa-map-marker-alt"></i> Ex-Chandigarh &rarr; Srinagar
+              &rarr; Gulmarg</span>
+            <h3 class="package-title">Kashmir Paradise Odyssey</h3>
+            <p class="package-desc">
+              A dream road journey across Jammu & Banihal tunnels to Srinagar, Dal Lake shikara rides, Gulmarg gondola,
+              and Pahalgam.
+            </p>
+            <ul class="package-highlights-list">
+              <li><i class="fas fa-check-circle"></i> Dal Lake Shikara ride & Mughal Gardens</li>
+              <li><i class="fas fa-check-circle"></i> Gulmarg Gondola & snow meadows</li>
+              <li><i class="fas fa-check-circle"></i> Pahalgam Betaab Valley & Aru Valley</li>
+            </ul>
+            <button class="btn-vip btn-vip-dark"
+              onclick="openQuoteModal({ destination: 'Kashmir Paradise Odyssey', tripType: 'Tour Package' })">
+              Book This Package &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. HOW THE VIP RIDE WORKS (6-Step Interactive Timeline)
+       ========================================================================== -->
+  <section class="section-padding how-it-works-section" id="how-it-works">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-stream"></i> Simple 6-Step Journey</span>
+        <h2 class="section-title">How The VIP Ride Works</h2>
+        <p class="section-desc">
+          From your initial inquiry in Chandigarh to reaching your mountain destination, our booking process is
+          transparent, reliable, and effortless.
+        </p>
+      </div>
+
+      <div class="steps-timeline-grid">
+
+        <div class="step-card">
+          <div class="step-number-badge">01</div>
+          <div class="step-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+          <h4 class="step-title">Choose Destination</h4>
+          <p class="step-desc">Select your travel spot across North India or customize your route.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number-badge">02</div>
+          <div class="step-icon-wrap"><i class="fas fa-car-side"></i></div>
+          <h4 class="step-title">Select Your Ride</h4>
+          <p class="step-desc">Pick from sedans, Crystas, Fortuners, to group tempo travellers.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number-badge">03</div>
+          <div class="step-icon-wrap"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h4 class="step-title">Get Quote</h4>
+          <p class="step-desc">Receive instant, all-inclusive pricing with transparent fares.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number-badge">04</div>
+          <div class="step-icon-wrap"><i class="fas fa-user-check"></i></div>
+          <h4 class="step-title">Meet Your Driver</h4>
+          <p class="step-desc">Your punctual, uniformed driver arrives at your Chandigarh doorstep.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number-badge">05</div>
+          <div class="step-icon-wrap"><i class="fas fa-road"></i></div>
+          <h4 class="step-title">Start Your Journey</h4>
+          <p class="step-desc">Relax and enjoy the smooth highway and mountain expressway drive.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number-badge">06</div>
+          <div class="step-icon-wrap"><i class="fas fa-mountain"></i></div>
+          <h4 class="step-title">Reach Destination</h4>
+          <p class="step-desc">Arrive safely and refreshed at your destination with 24/7 support.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. WHY VIP RIDES
+       ========================================================================== -->
+  <section class="section-padding why-us-section" id="why-us">
+    <div class="site-container">
+
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-award"></i> The VIP Difference</span>
+        <h2 class="section-title">Why Choose VIP Rides?</h2>
+        <p class="section-desc">
+          We believe outstation road travel starting from Chandigarh should be safe, punctual, and delightful for every
+          traveler.
+        </p>
+      </div>
+
+      <div class="why-us-grid">
+
+        <div class="why-feature-card">
+          <div class="why-icon-bubble"><i class="fas fa-couch"></i></div>
+          <h3 class="why-feature-title">Comfortable Travel</h3>
+          <p class="why-feature-desc">Meticulously maintained, fully air-conditioned, and sanitized cabs with
+            comfortable seating for long road trips.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-bubble"><i class="fas fa-id-card"></i></div>
+          <h3 class="why-feature-title">Experienced Drivers</h3>
+          <p class="why-feature-desc">Uniformed, fully licensed drivers with extensive experience on mountain hill
+            highways and expressways.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-bubble"><i class="fas fa-calendar-check"></i></div>
+          <h3 class="why-feature-title">Easy &amp; Instant Booking</h3>
+          <p class="why-feature-desc">Fast quotes, transparent fares with no hidden surcharges, and instant confirmation
+            via call or WhatsApp.</p>
+        </div>
+
+        <div class="why-feature-card">
+          <div class="why-icon-bubble"><i class="fas fa-headset"></i></div>
+          <h3 class="why-feature-title">24/7 Dedicated Support</h3>
+          <p class="why-feature-desc">Round-the-clock customer assistance ready to assist you during outstation trips,
+            airport transfers, and emergencies.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. PRE-FOOTER CTA SECTION
+       ========================================================================== -->
+  <section class="pre-footer-cta">
+    <div class="site-container">
+      <div class="cta-box-content">
+        <span class="section-badge" style="background: rgba(234, 179, 8, 0.2); border-color: rgba(234, 179, 8, 0.5);"><i
+            class="fas fa-car-side"></i> Start From Chandigarh</span>
+        <h2>Ready To Start Your Journey?</h2>
+        <p>
+          From Chandigarh to the mountains, valleys and spiritual destinations of North India — let's plan your next
+          ride with unmatched comfort and safety.
+        </p>
+        <div class="cta-btn-group">
+          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ pickup: 'Chandigarh' })">
+            <i class="fas fa-route"></i> Plan Your Journey
+          </button>
+          <a href="contact.html" class="btn-vip btn-vip-secondary">
+            <i class="fas fa-phone-alt"></i> Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-wrap">
+            <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
+          </a>
+          <p>
+            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and
+            cost-effective.
+          </p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <a href="https://wa.me/919872798927?text=Hello" target="_blank"
+              class="btn-vip btn-vip-secondary btn-vip-sm">
+              <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+            </a>
+            <a href="tel:+919023390211" class="btn-vip btn-vip-secondary btn-vip-sm">
+              <i class="fas fa-phone-alt" style="color: var(--accent);"></i> Call Now
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About Us</a></li>
+            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a>
+            </li>
+            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel
+                Booking</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Popular Routes</h4>
+          <ul class="footer-links-list">
+            <li><a href="#" data-open-modal="katra"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Katra</a></li>
+            <li><a href="#" data-open-modal="srinagar"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh
+                to Srinagar</a></li>
+            <li><a href="#" data-open-modal="dalhousie"><i class="fas fa-car" style="font-size: 0.75rem;"></i>
+                Chandigarh to Dalhousie</a></li>
+            <li><a href="#" data-open-modal="manali"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh
+                to Manali</a></li>
+            <li><a href="#" data-open-modal="shimla"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh
+                to Shimla</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Headquarters</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>30B, Ananta Homes, Gazipur Road, Zirakpur - 140603</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+91-9023390211 / +91-9872798927</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@viprides.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>24/7 Outstation Booking & Support</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 VIP Rides. All Rights Reserved. Start Your Journey From Chandigarh.
+        </div>
+        <div>
+          Reliable Outstation Cabs &amp; Holiday Tours
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING ACTIONS (WHATSAPP & CALL)
+       ========================================================================== -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides,%20I%20want%20to%20book%20a%20cab%20from%20Chandigarh"
+      class="floating-action-btn floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919023390211" class="floating-action-btn floating-call" aria-label="Call VIP Rides Now">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       DESTINATION DETAIL MODAL
+       ========================================================================== -->
+  <div class="vip-modal-backdrop" id="vipDestinationModal" role="dialog" aria-modal="true">
+    <div class="vip-modal-box">
+      <button class="modal-close-btn" onclick="closeDestinationModal()" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div style="height: 240px; overflow: hidden; position: relative;">
+        <img id="modalDestImg" src="assets/img/slider/1.jpg" alt="Destination Image"
+          style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="modal-inner-padding">
+        <h3 id="modalDestTitle" style="font-size: 1.6rem; color: var(--primary); margin-bottom: 0.25rem;">Destination
+          Name</h3>
+        <p id="modalDestSubtitle"
+          style="color: var(--accent-hover); font-weight: 700; font-size: 0.95rem; margin-bottom: 1.25rem;">Trip
+          Subtitle</p>
+
+        <div
+          style="display: flex; gap: 1.5rem; margin-bottom: 1.25rem; padding: 0.75rem 1rem; background: var(--bg-alt); border-radius: var(--radius-md);">
+          <div>
+            <span
+              style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; display: block;">Distance</span>
+            <strong id="modalDestDistance" style="color: var(--primary); font-size: 0.95rem;">390 km</strong>
+          </div>
+          <div>
+            <span
+              style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; display: block;">Est.
+              Duration</span>
+            <strong id="modalDestTime" style="color: var(--primary); font-size: 0.95rem;">~7.5 hrs</strong>
+          </div>
+          <div>
+            <span
+              style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; display: block;">Starting
+              Hub</span>
+            <strong style="color: var(--accent-hover); font-size: 0.95rem;">Chandigarh</strong>
+          </div>
+        </div>
+
+        <p id="modalDestOverview"
+          style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Destination overview content goes here.
+        </p>
+
+        <h5 style="font-size: 1rem; color: var(--primary); margin-bottom: 0.6rem;">Journey Highlights:</h5>
+        <ul id="modalDestHighlights" class="package-highlights-list" style="margin-bottom: 1.5rem;"></ul>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn-vip btn-vip-primary" style="flex: 1;"
+            onclick="closeDestinationModal(); openQuoteModal({ destination: document.getElementById('modalDestTitle').textContent, pickup: 'Chandigarh' });">
+            <i class="fas fa-car"></i> Book Cab For This Route
+          </button>
+          <a href="https://wa.me/919872798927?text=Hello,%20I%20am%20interested%20in%20a%20ride%20from%20Chandigarh"
+            target="_blank" class="btn-vip btn-vip-secondary" style="background: #25d366; color: white;">
+            <i class="fab fa-whatsapp"></i> Fast WhatsApp Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       QUICK QUOTE & LIVE BOOKING MODAL (Web3Forms Integrated)
+       ========================================================================== -->
+  <div class="vip-modal-backdrop" id="vipQuoteModal" role="dialog" aria-modal="true">
+    <div class="vip-modal-box">
+      <button class="modal-close-btn" onclick="closeQuoteModal()" aria-label="Close quote modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="modal-inner-padding">
+        <span class="section-badge"><i class="fas fa-calculator"></i> Fast Quote</span>
+        <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 0.35rem;">Get Instant Trip Quote</h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Enter your journey details and our dispatch team will share the exact all-inclusive fare immediately.
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="6919cd56-c089-44ea-82bf-71064991e7d6">
+          <input type="hidden" name="tripType" id="quoteTripType" value="Outstation">
+          <input type="hidden" name="subject" value="New VIP Rides Cab Booking / Quote Request">
+
+          <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-map-pin"></i> Pickup Location</label>
+              <input type="text" class="form-control-custom" name="Pickup_Location" id="quotePickup" value="Chandigarh"
+                required>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-location-arrow"></i> Destination</label>
+              <input type="text" class="form-control-custom" name="Destination" id="quoteDestination"
+                placeholder="e.g. Katra, Manali" required>
+            </div>
+          </div>
+
+          <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-calendar-alt"></i> Travel Date</label>
+              <input type="date" class="form-control-custom" name="Travel_Date" id="quoteDate" required>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-car"></i> Preferred Vehicle</label>
+              <input type="text" class="form-control-custom" name="Vehicle" id="quoteVehicle" value="Sedan / SUV"
+                placeholder="e.g. Dzire, Innova Crysta">
+            </div>
+          </div>
+
+          <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-user"></i> Your Full Name</label>
+              <input type="text" class="form-control-custom" name="Name" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom"><i class="fas fa-phone-alt"></i> Mobile Number</label>
+              <input type="tel" class="form-control-custom" name="Mobile" placeholder="e.g. 9023390211" required>
+            </div>
+          </div>
+
+          <div class="form-group-custom" style="margin-bottom: 1.5rem;">
+            <label class="form-label-custom"><i class="fas fa-comment-alt"></i> Special Requirements / Note</label>
+            <textarea class="form-control-custom" name="Message" rows="2"
+              placeholder="Flight number, hotel pickup, or custom stops..."></textarea>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button type="submit" class="btn-vip btn-vip-primary" style="flex: 1;">
+              <i class="fas fa-paper-plane"></i> Submit Quote Request
+            </button>
+            <button type="button" class="btn-vip btn-vip-secondary" style="background: #25d366; color: white;"
+              onclick="sendWhatsAppQuote()">
+              <i class="fab fa-whatsapp"></i> Quote on WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
