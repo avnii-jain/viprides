@@ -525,7 +525,7 @@
             </div>
             <div class="form-group-custom">
               <label class="form-label-custom"><i class="fas fa-phone-alt"></i> Mobile Number</label>
-              <input type="tel" class="form-control-custom" name="Mobile" placeholder="e.g. 9023390211" required>
+              <input type="tel" class="form-control-custom" name="Mobile" placeholder="10-digit mobile number" maxlength="10" minlength="10" pattern="[0-9]{10}" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)" title="Please enter a valid 10-digit mobile number" required>
             </div>
           </div>
 

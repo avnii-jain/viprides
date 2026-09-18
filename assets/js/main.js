@@ -609,3 +609,13 @@ function initLeafletMap() {
     console.warn('Map initialization:', err);
   }
 }
+
+/* ==========================================================================
+   10. MOBILE NUMBER INPUT ENFORCEMENT (STRICT 10 DIGITS)
+   ========================================================================== */
+document.addEventListener('input', function (e) {
+  if (e.target && (e.target.name === 'Mobile' || e.target.type === 'tel')) {
+    e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 10);
+  }
+});
+
