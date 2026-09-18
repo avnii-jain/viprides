@@ -882,6 +882,36 @@ section {
   color: var(--accent);
 }
 
+/* ==========================================================================
+   THE CHANDIGARH JOURNEY PATH (FILLED REPEATING TRAVEL SVG PATTERN)
+   ========================================================================== */
+.journey-path-section {
+  position: relative;
+  background-color: #f8fafc;
+  background-image: url('../img/patterns/journey-pattern.svg');
+  background-repeat: repeat;
+  background-size: 340px 340px;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+
+.journey-path-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.45) 0%, rgba(248, 250, 252, 0.75) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.journey-path-section .site-container {
+  position: relative;
+  z-index: 2;
+}
+
 /* Route Timeline Container */
 .route-timeline-wrap {
   position: relative;
