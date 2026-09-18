@@ -809,24 +809,21 @@ section {
 }
 
 /* ==========================================================================
-   6. SECTION — "THE CHANDIGARH JOURNEY PATH" (Interactive Route Timeline)
+   6. SECTION — "THE CHANDIGARH JOURNEY PATH" (FILLED REPEATING TRAVEL SVG PATTERN)
    ========================================================================== */
 .journey-path-section {
-  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 50%, #f8fafc 100%);
   position: relative;
+  background-color: #f8fafc;
+  background-image: url('../img/patterns/journey-pattern.svg');
+  background-repeat: repeat;
+  background-size: 360px 360px;
+  background-position: top left;
   overflow: hidden;
 }
 
-.journey-path-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(rgba(2, 132, 199, 0.04) 1px, transparent 1px);
-  background-size: 28px 28px;
-  pointer-events: none;
+.journey-path-section .site-container {
+  position: relative;
+  z-index: 2;
 }
 
 .origin-hub-top {
@@ -880,36 +877,6 @@ section {
 
 .hub-badge-item i {
   color: var(--accent);
-}
-
-/* ==========================================================================
-   THE CHANDIGARH JOURNEY PATH (FILLED REPEATING TRAVEL SVG PATTERN)
-   ========================================================================== */
-.journey-path-section {
-  position: relative;
-  background-color: #f8fafc;
-  background-image: url('../img/patterns/journey-pattern.svg');
-  background-repeat: repeat;
-  background-size: 340px 340px;
-  background-attachment: scroll;
-  overflow: hidden;
-}
-
-.journey-path-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.45) 0%, rgba(248, 250, 252, 0.75) 100%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-.journey-path-section .site-container {
-  position: relative;
-  z-index: 2;
 }
 
 /* Route Timeline Container */
