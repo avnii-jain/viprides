@@ -370,7 +370,7 @@ section {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.85rem;
 }
 
 .nav-phone-link {
@@ -382,6 +382,11 @@ section {
   font-weight: 700;
   font-size: 0.95rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-fast);
 }
 
 .nav-phone-link i {
@@ -389,17 +394,135 @@ section {
 }
 
 .nav-phone-link:hover {
+  background: var(--accent);
+  color: var(--primary);
+  border-color: var(--accent);
+}
+
+.nav-phone-link:hover i {
+  color: var(--primary);
+}
+
+/* Mobile Quick Call Button (Visible in Header on Mobile) */
+.nav-phone-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: var(--primary);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px var(--accent-glow);
+  transition: transform var(--transition-fast);
+}
+
+.nav-phone-btn:active {
+  transform: scale(0.94);
+}
+
+/* Mobile Hamburger Toggle Button */
+.nav-mobile-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-md);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  z-index: 1002;
+}
+
+.nav-mobile-toggle:hover,
+.nav-mobile-toggle:active {
+  background: var(--accent);
+  color: var(--primary);
+  border-color: var(--accent);
+}
+
+/* Mobile Drawer Header & Controls */
+.nav-drawer-header {
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nav-drawer-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-drawer-title span {
   color: var(--accent);
 }
 
-.nav-mobile-toggle {
-  display: none;
-  background: transparent;
-  border: none;
+.nav-drawer-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1rem;
   cursor: pointer;
-  z-index: 1002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.nav-drawer-close:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #ffffff;
+}
+
+.nav-drawer-actions {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Fullscreen Nav Backdrop */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 10, 20, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1040;
+  pointer-events: none;
+}
+
+.nav-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* ==========================================================================
@@ -496,54 +619,7 @@ section {
   text-shadow: 0 0 12px var(--accent);
 }
 
-/* Hero Drive-Across Luxury Travel Van (Slow smooth cruise, clean vehicle only) */
-.hero-car-stage {
-  position: relative;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 150px;
-  margin-top: 0.85rem;
-  margin-bottom: 0.25rem;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.hero-road-track {
-  display: none !important;
-}
-
-.hero-travel-car {
-  position: absolute;
-  left: -460px;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: left 7.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-  z-index: 12;
-  pointer-events: none;
-}
-
-.hero-travel-car.drive-across {
-  left: calc(100% + 460px);
-}
-
-.hero-travel-van-img {
-  width: clamp(280px, 28vw, 390px);
-  max-width: 85vw;
-  height: auto;
-  max-height: 125px;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.85)) brightness(1.06);
-}
-
-/* Hero Content Area (Same as earlier: No enclosing box, pure typography with shadows) */
+/* Hero Content Area (No enclosing box, pure typography with shadows) */
 .hero-main-content-wrap {
   position: relative;
   z-index: 6;
@@ -724,6 +800,12 @@ section {
   border-color: var(--accent);
   background: #ffffff;
   box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.booking-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 /* ==========================================================================
@@ -2098,24 +2180,128 @@ border-radius: var(--radius-md);
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN BREAKPOINTS
-   (320px, 360px, 375px, 390px, 430px, 768px, 820px, 1024px, 1280px, 1440px, 1920px)
+   RESPONSIVE DESIGN SYSTEM (Desktop, Tablet, Mobile, Small Screens)
    ========================================================================== */
 
-/* --- Tablet / Medium (< 1024px) --- */
-@media (max-width: 1023px) {
-  .journey-interactive-container {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+/* --- Large Desktop & Laptops (< 1200px) --- */
+@media (max-width: 1199px) {
+  .site-container {
+    padding: 0 1.5rem;
+  }
+
+  .nav-menu-list {
+    gap: 1.25rem;
+  }
+
+  .bento-col-7 { grid-column: span 7; }
+  .bento-col-5 { grid-column: span 5; }
+  .bento-col-4 { grid-column: span 4; }
+  .bento-col-6 { grid-column: span 6; }
+  .bento-col-8 { grid-column: span 8; }
+}
+
+/* --- Tablets & Medium Screens (< 992px) --- */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .site-header {
+    padding: 0.65rem 0;
+  }
+
+  .site-header.scrolled {
+    padding: 0.5rem 0;
+  }
+
+  .nav-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-phone-btn {
+    display: flex;
+  }
+
+  .nav-menu-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    max-width: 85vw;
+    height: 100vh;
+    height: 100dvh;
+    background: #0b132b;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+    gap: 0.4rem;
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.7);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  .nav-menu-list.open {
+    right: 0;
+  }
+
+  .nav-drawer-header {
+    display: flex;
+  }
+
+  .nav-drawer-actions {
+    display: flex;
+  }
+
+  .nav-link-item {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-link-item:hover,
+  .nav-link-item.active {
+    background: rgba(234, 179, 8, 0.15);
+    color: var(--accent);
+  }
+
+  .nav-link-item::after {
+    display: none;
+  }
+
+  .nav-actions .btn-vip.d-none-mobile {
+    display: none;
+  }
+
+  .hero-dest-panels-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .hero-dest-panels-grid .hero-vertical-panel:nth-child(n+6) {
+    display: none;
+  }
+
+  .fleet-grid,
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .steps-timeline-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
 
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+  .bento-dest-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem;
   }
 
   .bento-col-7,
@@ -2123,53 +2309,47 @@ border-radius: var(--radius-md);
   .bento-col-4,
   .bento-col-6,
   .bento-col-8 {
-    grid-column: span 6;
+    grid-column: span 3;
+    height: 300px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
   }
 
   .contact-split-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-/* --- Mobile Menu Drawer (< 992px) --- */
-@media (max-width: 991px) {
-  .nav-mobile-toggle {
-    display: block;
+    gap: 2rem;
   }
 
-  .nav-menu-list {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: #0b132b;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 6rem 2rem 2rem 2rem;
-    gap: 1.5rem;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
-    transition: right var(--transition-smooth);
-    z-index: 1001;
-  }
-
-  .nav-menu-list.open {
-    right: 0;
-  }
-
-  .nav-actions .btn-vip {
-    display: none;
-  }
-
-  .booking-form-grid {
+  .about-split-row {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
-/* --- Tablets & Large Mobile (< 768px) --- */
+/* --- Mobile Devices & Small Tablets (< 768px) --- */
 @media (max-width: 767px) {
   .section-padding {
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Hero Mobile Layout */
+  .hero-section {
+    min-height: calc(100vh - 60px);
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 2.5rem;
+    justify-content: center;
   }
 
   .hero-dest-panels-grid {
@@ -2182,12 +2362,119 @@ border-radius: var(--radius-md);
 
   .hero-panel-name {
     writing-mode: horizontal-tb;
-    bottom: 1rem;
-    font-size: 0.75rem;
+    bottom: 0.75rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
   }
 
+  .hero-headline {
+    font-size: clamp(1.85rem, 5.5vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.98rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta-group .btn-vip {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.5rem;
+  }
+
+  /* Route Timeline: Mobile Vertical Highway Spine */
+  .route-timeline-wrap {
+    padding: 1.5rem 0;
+  }
+
+  .route-timeline-spine {
+    left: 22px;
+    transform: none;
+    width: 4px;
+  }
+
+  .timeline-car-tracker {
+    left: 22px;
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .route-timeline-item {
+    flex-direction: row !important;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .timeline-milestone-marker {
+    left: 22px;
+    transform: translateX(-50%);
+    top: 1.25rem;
+  }
+
+  .milestone-node-dot {
+    width: 18px;
+    height: 18px;
+    border-width: 3px;
+  }
+
+  .milestone-dist-pill {
+    display: none;
+  }
+
+  .timeline-card-spacer {
+    display: none !important;
+  }
+
+  .timeline-card-box {
+    width: calc(100% - 50px) !important;
+    margin-left: 50px !important;
+    margin-right: 0 !important;
+    border-radius: var(--radius-lg);
+  }
+
+  .timeline-card-img-wrap {
+    height: 150px;
+  }
+
+  .timeline-card-body {
+    padding: 1.25rem 1.15rem;
+  }
+
+  .timeline-card-title {
+    font-size: 1.15rem;
+  }
+
+  .timeline-card-desc {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-card-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .timeline-card-actions .btn-vip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Bento Destinations Mobile */
   .bento-dest-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .bento-col-7,
@@ -2196,25 +2483,92 @@ border-radius: var(--radius-md);
   .bento-col-6,
   .bento-col-8 {
     grid-column: span 1;
+    height: 280px;
   }
 
+  /* Fleet & Packages Mobile */
+  .fleet-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .fleet-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .fleet-card-footer .btn-vip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .package-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .package-card-footer .btn-vip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Steps Timeline Mobile */
   .steps-timeline-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
+  /* About & Contact Mobile */
   .about-stats-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  /* Modals Mobile */
+  .vip-modal-box {
+    max-width: 95vw;
+    margin: 1rem auto;
+    border-radius: var(--radius-lg);
+  }
+
+  .modal-inner-padding {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Form Grids Mobile */
+  .booking-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
   }
 }
 
-/* --- Compact Mobile (< 430px) --- */
-@media (max-width: 429px) {
+/* --- Compact Mobile Screens (< 480px) --- */
+@media (max-width: 479px) {
   .site-container {
     padding: 0 1rem;
+  }
+
+  .brand-logo-img {
+    height: 34px;
+  }
+
+  .brand-logo-wrap {
+    padding: 0.3rem 0.65rem;
+    gap: 0.5rem;
   }
 
   .hero-dest-panels-grid {
@@ -2226,22 +2580,46 @@ border-radius: var(--radius-md);
   }
 
   .hero-headline {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
-  .hero-travel-car {
-    padding: 0.4rem 0.9rem;
+  .hero-subtext {
+    font-size: 0.92rem;
   }
 
-  .hero-travel-car-text {
+  .chandigarh-origin-tag {
+    padding: 0.35rem 0.85rem;
+  }
+
+  .chandigarh-tag-text {
     font-size: 0.75rem;
   }
 
-  .hero-booking-bar-card {
-    padding: 1.25rem 1rem;
+  .route-timeline-spine {
+    left: 16px;
+  }
+
+  .timeline-car-tracker {
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .timeline-milestone-marker {
+    left: 16px;
+  }
+
+  .timeline-card-box {
+    width: calc(100% - 38px) !important;
+    margin-left: 38px !important;
   }
 
   .about-stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .nav-menu-list {
+    width: 260px;
   }
 }

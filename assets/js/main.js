@@ -22,6 +22,8 @@ function initNavbar() {
   const header = document.querySelector('.site-header');
   const mobileToggle = document.querySelector('.nav-mobile-toggle');
   const navMenu = document.querySelector('.nav-menu-list');
+  const navBackdrop = document.querySelector('.nav-backdrop');
+  const navDrawerClose = document.querySelector('.nav-drawer-close');
 
   if (header && !header.classList.contains('solid-header')) {
     window.addEventListener('scroll', () => {
@@ -33,41 +35,69 @@ function initNavbar() {
     }, { passive: true });
   }
 
-  if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+  function openMenu() {
+    if (!navMenu) return;
+    navMenu.classList.add('open');
+    if (navBackdrop) navBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (mobileToggle) {
       const icon = mobileToggle.querySelector('i');
       if (icon) {
-        if (navMenu.classList.contains('open')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-times');
-        } else {
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
-        }
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      }
+    }
+  }
+
+  function closeMenu() {
+    if (!navMenu) return;
+    navMenu.classList.remove('open');
+    if (navBackdrop) navBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+    if (mobileToggle) {
+      const icon = mobileToggle.querySelector('i');
+      if (icon) {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    }
+  }
+
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMenu();
+      } else {
+        openMenu();
       }
     });
 
-    document.addEventListener('click', (e) => {
-      if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
-        navMenu.classList.remove('open');
-        const icon = mobileToggle.querySelector('i');
-        if (icon) {
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
-        }
-      }
-    });
+    if (navDrawerClose) {
+      navDrawerClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeMenu();
+      });
+    }
 
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', () => {
+        closeMenu();
+      });
+    }
+
+    // Close on any nav link click
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        const icon = mobileToggle.querySelector('i');
-        if (icon) {
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
-        }
+        closeMenu();
       });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMenu();
+      }
     });
   }
 }
@@ -77,10 +107,7 @@ function initNavbar() {
    ========================================================================== */
 function initHeroSequence() {
   const panels = document.querySelectorAll('.hero-vertical-panel');
-  const travelCar = document.getElementById('heroTravelCar');
-  const carStage = document.querySelector('.hero-car-stage');
   const mainContent = document.getElementById('heroMainContent');
-  const bookingBar = document.getElementById('heroBookingBar');
 
   if (!panels.length) return;
 
@@ -97,27 +124,6 @@ function initHeroSequence() {
       mainContent.classList.add('visible');
     }
   }, 400);
-
-  // Step 3: Once panels are in view, the large luxury van drives from LEFT to RIGHT below the buttons
-  const panelsDuration = panels.length * 160 + 100;
-  setTimeout(() => {
-    if (travelCar) {
-      travelCar.classList.add('drive-across');
-    }
-  }, panelsDuration);
-
-  // Step 4: After drive completion, smoothly fade out the car track
-  const carExitDuration = panelsDuration + 7500;
-  setTimeout(() => {
-    if (carStage) {
-      carStage.style.opacity = '0';
-      carStage.style.transition = 'opacity 0.8s ease';
-      setTimeout(() => { carStage.style.display = 'none'; }, 800);
-    }
-    if (bookingBar) {
-      bookingBar.classList.add('visible');
-    }
-  }, carExitDuration);
 }
 
 /* ==========================================================================

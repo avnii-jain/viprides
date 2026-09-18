@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Rental — VIP Rides | Outstation Cab &amp; Fleet Hire from Chandigarh</title>
-  <meta name="description" content="Rent a car in Chandigarh with VIP Rides. Wide range of vehicles: Dzire, Etios, Innova Crysta, Fortuner, and Force Tempo Travellers for outstation and local trips.">
-  
+  <meta name="description"
+    content="Rent a car in Chandigarh with VIP Rides. Wide range of vehicles: Dzire, Etios, Innova Crysta, Fortuner, and Force Tempo Travellers for outstation and local trips.">
+
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,11 +21,12 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17693743068"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-17693743068');
   </script>
 </head>
+
 <body>
 
   <!-- Site Navigation -->
@@ -29,26 +34,46 @@
     <div class="site-container nav-container">
       <a href="index.html" class="brand-logo-wrap" aria-label="VIP Rides Home">
         <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
-        <span class="brand-badge d-none d-sm-inline-block">Chandigarh Hub</span>
       </a>
 
+      <!-- Main Navigation Menu / Mobile Drawer -->
       <nav aria-label="Main Navigation">
         <ul class="nav-menu-list">
+          <li class="nav-drawer-header">
+            <span class="nav-drawer-title"><i class="fas fa-crown"></i> VIP <span>Rides</span></span>
+            <button class="nav-drawer-close" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </li>
           <li><a href="index.html" class="nav-link-item">Home</a></li>
           <li><a href="index.html#destinations" class="nav-link-item">Destinations</a></li>
           <li><a href="index.html#packages" class="nav-link-item">Tour Packages</a></li>
           <li><a href="carrental.html" class="nav-link-item active">Car Rental</a></li>
           <li><a href="about.html" class="nav-link-item">About Us</a></li>
           <li><a href="contact.html" class="nav-link-item">Contact Us</a></li>
+
+          <!-- Mobile Drawer Action Buttons -->
+          <li class="nav-drawer-actions">
+            <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm"
+              style="width: 100%; justify-content: center;">
+              <i class="fas fa-phone-alt"></i> +91 90233 90211
+            </a>
+            <button class="btn-vip btn-vip-outline btn-vip-sm"
+              style="width: 100%; justify-content: center; color: #ffffff; border-color: rgba(255,255,255,0.3);"
+              onclick="openQuoteModal({ pickup: 'Chandigarh', tripType: 'Car Rental' })">
+              <i class="fas fa-car"></i> Book A Car
+            </button>
+          </li>
         </ul>
       </nav>
 
+      <!-- Nav Actions (Desktop + Mobile Quick Phone & Toggle) -->
       <div class="nav-actions">
-        <a href="tel:+919023390211" class="nav-phone-link d-none d-md-flex">
+        <a href="tel:+919023390211" class="nav-phone-btn" aria-label="Call VIP Rides">
           <i class="fas fa-phone-alt"></i>
-          <span>+91 90233 90211</span>
         </a>
-        <button class="btn-vip btn-vip-primary btn-vip-sm" onclick="openQuoteModal({ pickup: 'Chandigarh', tripType: 'Car Rental' })">
+        <button class="btn-vip btn-vip-primary btn-vip-sm d-none d-lg-inline-flex"
+          onclick="openQuoteModal({ pickup: 'Chandigarh', tripType: 'Car Rental' })">
           <i class="fas fa-car"></i> Book A Car
         </button>
         <button class="nav-mobile-toggle" aria-label="Toggle navigation menu">
@@ -56,6 +81,7 @@
         </button>
       </div>
     </div>
+    <div class="nav-backdrop"></div>
   </header>
 
   <!-- Hero Section -->
@@ -65,7 +91,8 @@
         <span class="section-badge"><i class="fas fa-car"></i> Fleet &amp; Taxi Services</span>
         <h1 class="inner-hero-title">Rent a Car. Travel Your Way.</h1>
         <p class="inner-hero-desc">
-          Need a reliable vehicle for an outstation trip, family vacation, or local wedding? Explore our clean, comfortable, and well-maintained fleet starting from Chandigarh.
+          Need a reliable vehicle for an outstation trip, family vacation, or local wedding? Explore our clean,
+          comfortable, and well-maintained fleet starting from Chandigarh.
         </p>
       </div>
     </div>
@@ -74,7 +101,7 @@
   <!-- Car Rental Grid Section -->
   <section class="section-padding fleet-section" style="background: #ffffff;">
     <div class="site-container">
-      
+
       <!-- Filter Tabs -->
       <div class="dest-filter-bar fleet-filter-bar">
         <button class="filter-pill active" data-filter="all">All Vehicles</button>
@@ -86,7 +113,7 @@
 
       <!-- Fleet Cards -->
       <div class="fleet-grid">
-        
+
         <!-- Dzire -->
         <div class="fleet-card" data-category="sedan">
           <span class="fleet-category-badge">Executive Sedan</span>
@@ -109,7 +136,8 @@
               <span>AC / Climate</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Maruti Suzuki Dzire', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Maruti Suzuki Dzire', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -136,7 +164,8 @@
               <span>Full AC</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Swift / Etios Liva', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Swift / Etios Liva', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -163,7 +192,8 @@
               <span>Full AC</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Toyota Etios Sedan', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Toyota Etios Sedan', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -190,7 +220,8 @@
               <span>Dual AC</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Honda Amaze', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Honda Amaze', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -217,7 +248,8 @@
               <span>Rear AC Vents</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Toyota Innova Crysta', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Toyota Innova Crysta', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -244,7 +276,8 @@
               <span>4WD Capable</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Toyota Fortuner', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Toyota Fortuner', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -271,7 +304,8 @@
               <span>Audio/Video</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Force Tempo Traveller', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Force Tempo Traveller', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -298,7 +332,8 @@
               <span>Central AC</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Executive Mini Bus', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Executive Mini Bus', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -325,7 +360,8 @@
               <span>Entertainment</span>
             </div>
           </div>
-          <button class="btn-vip btn-vip-primary" onclick="openQuoteModal({ vehicle: 'Deluxe Luxury Bus 2X2', pickup: 'Chandigarh' })">
+          <button class="btn-vip btn-vip-primary"
+            onclick="openQuoteModal({ vehicle: 'Deluxe Luxury Bus 2X2', pickup: 'Chandigarh' })">
             Rent This Vehicle
           </button>
         </div>
@@ -344,7 +380,8 @@
         </span>
         <h2>Need a Custom Vehicle or Long-Term Rental?</h2>
         <p>
-          Speak with our fleet manager in Chandigarh for corporate monthly packages, wedding convoy rentals, and special outstation arrangements.
+          Speak with our fleet manager in Chandigarh for corporate monthly packages, wedding convoy rentals, and special
+          outstation arrangements.
         </p>
         <div class="cta-btn-group">
           <a href="contact.html" class="btn-vip btn-vip-primary">
@@ -367,7 +404,8 @@
             <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
           </a>
           <p>
-            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and cost-effective.
+            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and
+            cost-effective.
           </p>
         </div>
         <div>
@@ -375,19 +413,27 @@
           <ul class="footer-links-list">
             <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Home</a></li>
             <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About Us</a></li>
-            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a></li>
-            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel Booking</a></li>
-            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a></li>
+            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a>
+            </li>
+            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel
+                Booking</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a>
+            </li>
           </ul>
         </div>
         <div>
           <h4 class="footer-col-title">Popular Routes</h4>
           <ul class="footer-links-list">
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Katra</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Srinagar</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Dalhousie</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Manali</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Shimla</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Katra</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Srinagar</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Dalhousie</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Manali</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Shimla</a></li>
           </ul>
         </div>
         <div>
@@ -417,7 +463,8 @@
 
   <!-- Floating Actions -->
   <div class="floating-actions">
-    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides" class="floating-action-btn floating-whatsapp" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides" class="floating-action-btn floating-whatsapp"
+      target="_blank" aria-label="WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
     <a href="tel:+919023390211" class="floating-action-btn floating-call" aria-label="Call Now">
@@ -432,7 +479,10 @@
         <i class="fas fa-times"></i>
       </button>
       <div class="modal-inner-padding">
-        <span class="section-badge"><i class="fas fa-car"></i> Car Rental Quote</span>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+          <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" style="height: 38px; width: auto; object-fit: contain;">
+          <span class="section-badge" style="margin-bottom: 0;"><i class="fas fa-car"></i> Car Rental Quote</span>
+        </div>
         <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 0.35rem;">Book / Rent This Vehicle</h3>
         <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
           Get instant pricing for self-drive inquiries, outstation chauffeur-driven packages, or local hire.
@@ -446,11 +496,13 @@
           <div class="booking-form-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 1rem;">
             <div class="form-group-custom">
               <label class="form-label-custom"><i class="fas fa-car"></i> Selected Vehicle</label>
-              <input type="text" class="form-control-custom" name="Vehicle" id="quoteVehicle" value="Maruti Suzuki Dzire" required>
+              <input type="text" class="form-control-custom" name="Vehicle" id="quoteVehicle"
+                value="Maruti Suzuki Dzire" required>
             </div>
             <div class="form-group-custom">
               <label class="form-label-custom"><i class="fas fa-map-pin"></i> Pickup City / Point</label>
-              <input type="text" class="form-control-custom" name="Pickup_Location" id="quotePickup" value="Chandigarh" required>
+              <input type="text" class="form-control-custom" name="Pickup_Location" id="quotePickup" value="Chandigarh"
+                required>
             </div>
           </div>
 
@@ -461,7 +513,8 @@
             </div>
             <div class="form-group-custom">
               <label class="form-label-custom"><i class="fas fa-location-arrow"></i> Travel Route / Destination</label>
-              <input type="text" class="form-control-custom" name="Destination" id="quoteDestination" placeholder="e.g. Local Chandigarh / Outstation" required>
+              <input type="text" class="form-control-custom" name="Destination" id="quoteDestination"
+                placeholder="e.g. Local Chandigarh / Outstation" required>
             </div>
           </div>
 
@@ -478,14 +531,16 @@
 
           <div class="form-group-custom" style="margin-bottom: 1.5rem;">
             <label class="form-label-custom"><i class="fas fa-comment-dots"></i> Additional Requirements</label>
-            <textarea class="form-control-custom" name="Message" rows="2" placeholder="Duration of rental, expected kilometers, or driver preference..."></textarea>
+            <textarea class="form-control-custom" name="Message" rows="2"
+              placeholder="Duration of rental, expected kilometers, or driver preference..."></textarea>
           </div>
 
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <button type="submit" class="btn-vip btn-vip-primary" style="flex: 1;">
               <i class="fas fa-paper-plane"></i> Submit Rental Request
             </button>
-            <button type="button" class="btn-vip btn-vip-secondary" style="background: #25d366; color: white;" onclick="sendWhatsAppQuote()">
+            <button type="button" class="btn-vip btn-vip-secondary" style="background: #25d366; color: white;"
+              onclick="sendWhatsAppQuote()">
               <i class="fab fa-whatsapp"></i> Chat on WhatsApp
             </button>
           </div>
@@ -496,4 +551,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

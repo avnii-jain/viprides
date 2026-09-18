@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — VIP Rides | Chandigarh Hub &amp; Interactive Location Map</title>
-  <meta name="description" content="Contact VIP Rides Chandigarh. Phone: +91-9023390211. Address: 30B, Ananta Homes, Gazipur Road, Zirakpur - 140603. Interactive map, instant cab quote, and 24/7 outstation dispatch.">
-  
+  <meta name="description"
+    content="Contact VIP Rides Chandigarh. Phone: +91-9023390211. Address: 30B, Ananta Homes, Gazipur Road, Zirakpur - 140603. Interactive map, instant cab quote, and 24/7 outstation dispatch.">
+
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/all.css">
-  
+
   <!-- Leaflet Map CSS for Interactive Map -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
   <!-- Design System CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -22,11 +27,12 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17693743068"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-17693743068');
   </script>
 </head>
+
 <body>
 
   <!-- Site Navigation -->
@@ -34,26 +40,44 @@
     <div class="site-container nav-container">
       <a href="index.html" class="brand-logo-wrap" aria-label="VIP Rides Home">
         <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
-        <span class="brand-badge d-none d-sm-inline-block">Chandigarh Hub</span>
       </a>
 
+      <!-- Main Navigation Menu / Mobile Drawer -->
       <nav aria-label="Main Navigation">
         <ul class="nav-menu-list">
+          <li class="nav-drawer-header">
+            <span class="nav-drawer-title"><i class="fas fa-crown"></i> VIP <span>Rides</span></span>
+            <button class="nav-drawer-close" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </li>
           <li><a href="index.html" class="nav-link-item">Home</a></li>
           <li><a href="index.html#destinations" class="nav-link-item">Destinations</a></li>
           <li><a href="index.html#packages" class="nav-link-item">Tour Packages</a></li>
           <li><a href="carrental.html" class="nav-link-item">Car Rental</a></li>
           <li><a href="about.html" class="nav-link-item">About Us</a></li>
           <li><a href="contact.html" class="nav-link-item active">Contact Us</a></li>
+
+          <!-- Mobile Drawer Action Buttons -->
+          <li class="nav-drawer-actions">
+            <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm"
+              style="width: 100%; justify-content: center;">
+              <i class="fas fa-phone-alt"></i> Call +91 90233 90211
+            </a>
+            <a href="tel:+919872798927" class="btn-vip btn-vip-outline btn-vip-sm"
+              style="width: 100%; justify-content: center; color: #ffffff; border-color: rgba(255,255,255,0.3);">
+              <i class="fas fa-headset"></i> Support: 98727 98927
+            </a>
+          </li>
         </ul>
       </nav>
 
+      <!-- Nav Actions (Desktop + Mobile Quick Phone & Toggle) -->
       <div class="nav-actions">
-        <a href="tel:+919023390211" class="nav-phone-link d-none d-md-flex">
+        <a href="tel:+919023390211" class="nav-phone-btn" aria-label="Call VIP Rides">
           <i class="fas fa-phone-alt"></i>
-          <span>+91 90233 90211</span>
         </a>
-        <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm">
+        <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm d-none d-lg-inline-flex">
           <i class="fas fa-phone-alt"></i> Call Now
         </a>
         <button class="nav-mobile-toggle" aria-label="Toggle navigation menu">
@@ -61,6 +85,7 @@
         </button>
       </div>
     </div>
+    <div class="nav-backdrop"></div>
   </header>
 
   <!-- Contact Hero -->
@@ -70,7 +95,8 @@
         <span class="section-badge"><i class="fas fa-headset"></i> 24/7 Travel Assistance</span>
         <h1 class="inner-hero-title">Get In Touch With VIP Rides</h1>
         <p class="inner-hero-desc">
-          Have a question about an outstation route, vehicle availability, or tour itinerary? We are here 24 hours a day to assist you.
+          Have a question about an outstation route, vehicle availability, or tour itinerary? We are here 24 hours a day
+          to assist you.
         </p>
       </div>
     </div>
@@ -79,16 +105,16 @@
   <!-- Split Screen: Contact Info & Interactive Map -->
   <section class="section-padding" style="background: #ffffff;">
     <div class="site-container">
-      
+
       <div class="contact-split-grid">
-        
+
         <!-- LEFT: Contact Information -->
         <div class="contact-info-panel">
           <span class="section-badge"><i class="fas fa-id-card"></i> Direct Contact</span>
           <h2 class="contact-card-title">Our Office &amp; Dispatch Hub</h2>
-          
+
           <div class="contact-details-grid">
-            
+
             <div class="contact-detail-box">
               <div class="contact-detail-icon">
                 <i class="fas fa-map-marker-alt"></i>
@@ -106,7 +132,7 @@
               <div class="contact-detail-text">
                 <h6>Call / WhatsApp Support</h6>
                 <p>
-                  <a href="tel:+919023390211">+91 90233 90211</a> &bull; 
+                  <a href="tel:+919023390211">+91 90233 90211</a> &bull;
                   <a href="tel:+919872798927">+91 98727 98927</a>
                 </p>
               </div>
@@ -135,7 +161,8 @@
           </div>
 
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides,%20I%20want%20to%20inquire%20about%20a%20ride" target="_blank" class="btn-vip btn-vip-primary" style="flex: 1;">
+            <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides,%20I%20want%20to%20inquire%20about%20a%20ride"
+              target="_blank" class="btn-vip btn-vip-primary" style="flex: 1;">
               <i class="fab fa-whatsapp"></i> Chat on WhatsApp
             </a>
             <a href="tel:+919023390211" class="btn-vip btn-vip-dark" style="flex: 1;">
@@ -148,12 +175,14 @@
         <div class="contact-map-card">
           <div class="map-card-header">
             <h4><i class="fas fa-map-marked-alt"></i> Interactive Location Map</h4>
-            <a href="https://maps.google.com/?q=30B,+Ananta+Homes,+Gazipur+Road,+Zirakpur" target="_blank" class="btn-vip btn-vip-outline btn-vip-sm">
+            <a href="https://maps.google.com/?q=30B,+Ananta+Homes,+Gazipur+Road,+Zirakpur" target="_blank"
+              class="btn-vip btn-vip-outline btn-vip-sm">
               <i class="fas fa-directions"></i> Get Directions
             </a>
           </div>
           <div id="vipContactMap" style="height: 440px; width: 100%;"></div>
-          <div style="padding: 0.85rem 1.25rem; background: var(--bg-alt); font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
+          <div
+            style="padding: 0.85rem 1.25rem; background: var(--bg-alt); font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; justify-content: space-between;">
             <span><i class="fas fa-info-circle"></i> Click map to activate zoom scroll</span>
             <span style="font-weight: 700; color: var(--primary);">Zirakpur / Chandigarh Hub</span>
           </div>
@@ -167,16 +196,21 @@
   <!-- BELOW: "Send Us a Message" -->
   <section class="contact-form-section">
     <div class="site-container">
-      
+
       <div class="section-header">
         <span class="section-badge"><i class="fas fa-paper-plane"></i> Message Us</span>
         <h2 class="section-title">Send Us a Message</h2>
         <p class="section-desc">
-          Fill in your travel preferences and our dispatch coordinator will respond with detailed itinerary options and best prices.
+          Fill in your travel preferences and our dispatch coordinator will respond with detailed itinerary options and
+          best prices.
         </p>
       </div>
 
       <div class="contact-form-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+          <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" style="height: 38px; width: auto; object-fit: contain;">
+          <span class="section-badge" style="margin-bottom: 0;"><i class="fas fa-paper-plane"></i> Quick Dispatch Query</span>
+        </div>
         <form action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="6919cd56-c089-44ea-82bf-71064991e7d6">
           <input type="hidden" name="subject" value="Contact Us Inquiry - VIP Rides">
@@ -205,12 +239,15 @@
 
           <div class="form-group-custom" style="margin-bottom: 1.25rem;">
             <label class="form-label-custom"><i class="fas fa-map-marker-alt"></i> Destination / Trip Type</label>
-            <input type="text" class="form-control-custom" name="Destination" placeholder="e.g. Chandigarh to Katra / Dalhousie Tour / Local Taxi Hire" required>
+            <input type="text" class="form-control-custom" name="Destination"
+              placeholder="e.g. Chandigarh to Katra / Dalhousie Tour / Local Taxi Hire" required>
           </div>
 
           <div class="form-group-custom" style="margin-bottom: 1.75rem;">
             <label class="form-label-custom"><i class="fas fa-comment-dots"></i> Message / Query</label>
-            <textarea class="form-control-custom" name="Message" rows="4" placeholder="Tell us about the number of passengers, preferred vehicle, pickup location or specific tour dates..." required></textarea>
+            <textarea class="form-control-custom" name="Message" rows="4"
+              placeholder="Tell us about the number of passengers, preferred vehicle, pickup location or specific tour dates..."
+              required></textarea>
           </div>
 
           <div style="display: flex; justify-content: flex-end;">
@@ -233,7 +270,8 @@
             <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
           </a>
           <p>
-            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and cost-effective.
+            VIP Rides makes outstation cab booking and North India tour travel from Chandigarh delightful, safe, and
+            cost-effective.
           </p>
         </div>
         <div>
@@ -241,19 +279,27 @@
           <ul class="footer-links-list">
             <li><a href="index.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Home</a></li>
             <li><a href="about.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> About Us</a></li>
-            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a></li>
-            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel Booking</a></li>
-            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a></li>
+            <li><a href="carrental.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Car Rental</a>
+            </li>
+            <li><a href="hotelbooking.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Hotel
+                Booking</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i> Contact Us</a>
+            </li>
           </ul>
         </div>
         <div>
           <h4 class="footer-col-title">Popular Routes</h4>
           <ul class="footer-links-list">
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Katra</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Srinagar</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Dalhousie</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Manali</a></li>
-            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to Shimla</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Katra</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Srinagar</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Dalhousie</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Manali</a></li>
+            <li><a href="index.html#destinations"><i class="fas fa-car" style="font-size: 0.75rem;"></i> Chandigarh to
+                Shimla</a></li>
           </ul>
         </div>
         <div>
@@ -283,7 +329,8 @@
 
   <!-- Floating Actions -->
   <div class="floating-actions">
-    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides" class="floating-action-btn floating-whatsapp" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/919872798927?text=Hello%20VIP%20Rides" class="floating-action-btn floating-whatsapp"
+      target="_blank" aria-label="WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
     <a href="tel:+919023390211" class="floating-action-btn floating-call" aria-label="Call Now">
@@ -292,8 +339,10 @@
   </div>
 
   <!-- Leaflet Map JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

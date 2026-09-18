@@ -40,23 +40,44 @@
     <div class="site-container nav-container">
       <a href="index.html" class="brand-logo-wrap" aria-label="VIP Rides Home">
         <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" class="brand-logo-img">
-        <span class="brand-badge d-none d-sm-inline-block">Chandigarh Hub</span>
       </a>
 
+      <!-- Main Navigation Menu / Mobile Drawer -->
       <nav aria-label="Main Navigation">
         <ul class="nav-menu-list">
+          <li class="nav-drawer-header">
+            <span class="nav-drawer-title"><i class="fas fa-crown"></i> VIP <span>Rides</span></span>
+            <button class="nav-drawer-close" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </li>
           <li><a href="index.html" class="nav-link-item active">Home</a></li>
           <li><a href="#journey-path" class="nav-link-item">Journey Path</a></li>
           <li><a href="#destinations" class="nav-link-item">Destinations</a></li>
           <li><a href="#fleet" class="nav-link-item">Car Rental</a></li>
           <li><a href="#packages" class="nav-link-item">Tour Packages</a></li>
-          <li><a href="about.html" class="nav-link-item">About Us</a></li>
-          <li><a href="contact.html" class="nav-link-item">Contact Us</a></li>
+          <li><a href="about.html" class="nav-link-item">About</a></li>
+          <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+
+          <!-- Mobile Drawer Action Buttons -->
+          <li class="nav-drawer-actions">
+            <a href="tel:+919023390211" class="btn-vip btn-vip-primary btn-vip-sm"
+              style="width: 100%; justify-content: center;">
+              <i class="fas fa-phone-alt"></i> +91 90233 90211
+            </a>
+            <button class="btn-vip btn-vip-outline btn-vip-sm"
+              style="width: 100%; justify-content: center; color: #ffffff; border-color: rgba(255,255,255,0.3);"
+              onclick="openQuoteModal({ pickup: 'Chandigarh' })">
+              <i class="fas fa-car"></i> Book A Cab
+            </button>
+          </li>
         </ul>
       </nav>
 
+      <!-- Nav Actions (Desktop + Mobile Quick Phone & Toggle) -->
       <div class="nav-actions">
-        <button class="btn-vip btn-vip-primary btn-vip-sm" onclick="openQuoteModal({ pickup: 'Chandigarh' })">
+        <button class="btn-vip btn-vip-primary btn-vip-sm d-none d-lg-inline-flex"
+          onclick="openQuoteModal({ pickup: 'Chandigarh' })">
           <i class="fas fa-car"></i> Book Now
         </button>
         <button class="nav-mobile-toggle" aria-label="Toggle navigation menu">
@@ -64,6 +85,7 @@
         </button>
       </div>
     </div>
+    <div class="nav-backdrop"></div>
   </header>
 
   <!-- ==========================================================================
@@ -141,13 +163,6 @@
           <a href="#journey-path" class="btn-vip btn-vip-secondary">
             <i class="fas fa-compass"></i> Explore Destinations
           </a>
-        </div>
-
-        <!-- Step 2: Car Appears Below Buttons -->
-        <div class="hero-car-stage" id="heroCarStage">
-          <div class="hero-travel-car" id="heroTravelCar">
-            <img src="assets/img/cars/hero-travel-van.png" alt="VIP Rides Luxury Cab" class="hero-travel-van-img">
-          </div>
         </div>
       </div>
 
@@ -1310,7 +1325,10 @@
       </button>
 
       <div class="modal-inner-padding">
-        <span class="section-badge"><i class="fas fa-calculator"></i> Fast Quote</span>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+          <img src="assets/img/logo/viprideslogo.png" alt="VIP Rides Logo" style="height: 38px; width: auto; object-fit: contain;">
+          <span class="section-badge" style="margin-bottom: 0;"><i class="fas fa-calculator"></i> Fast Quote</span>
+        </div>
         <h3 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 0.35rem;">Get Instant Trip Quote</h3>
         <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
           Enter your journey details and our dispatch team will share the exact all-inclusive fare immediately.
